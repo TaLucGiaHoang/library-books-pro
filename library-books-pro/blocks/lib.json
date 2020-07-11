@@ -1,0 +1,38 @@
+{
+    "name": "SKT Theme Blocks",
+    "version": "1.0",
+    "groups": [{
+        "id": "home-sections",
+        "label": "<i class='fa fa-home'></i>Home Sections",
+        "position": 0
+    }],
+	
+    "blocks": [{
+        "name": "home_section1",
+        "url": "home_section1/"
+    }, {
+        "name": "home_section2",
+        "url": "home_section2/"
+    }, {
+        "name": "home_section3",
+        "url": "home_section3/"
+    }, {
+        "name": "home_section4",
+        "url": "home_section4/"
+    }, {
+        "name": "home_section5",
+        "url": "home_section5/"
+    }, {
+        "name": "home_section6",
+        "url": "home_section6/"
+    }, {
+        "name": "home_section7",
+        "url": "home_section7/"
+    }],
+	
+	"res": [{
+        "type": "css",
+        "name": "skttheme-default-css",
+        "src": "lib.css"
+    }]
+}

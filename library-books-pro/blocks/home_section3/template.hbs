@@ -1,0 +1,104 @@
+<div class="skt-builder-block-wrapper skt-builder-home-section3-block skt-builder-home-section3-block-{{id}}" style="background-color: {{blockBackgroundColor}}; background-image: url({{blockBgImageUrl}}); padding-bottom: {{blockPaddingBottom}}px; padding-top: {{blockPaddingTop}}px; {{#if blockParallaxEffect}}background-attachment: fixed;{{/if}}">
+	<div class="skt-builder-block-inner skt-builder-block-inner-{{id}}" style="{{#if blockAnimation}}visibility: hidden;{{/if}}">
+		<div class="skt-builder-container">
+			{{#if blockTitle}}
+				<div class="skt-builder-block-title" style="text-align: {{blockTitleAlign}};">
+					<h2 style="color: {{blockTitleColor}}; font-size: {{blockTitleFontSize}}px; {{#if blockTitleSeparator}}margin-bottom: 0;{{else}}margin-bottom: {{blockTitleMarginBottom}}px;{{/if}} text-align: {{blockTitleAlign}};">{{blockTitle}}</h2>
+                    {{#if blockTitleSeparator}}<div class="skt-builder-block-title-separator" style="background-color: {{blockTitleSeparatorColor}}; margin-bottom: {{blockTitleMarginBottom}}px;"></div>{{/if}}
+				</div>
+			{{/if}}
+			{{#if blockDescription}}
+                <div class="skt-builder-block-description">{{{blockDescription}}}</div>
+            {{/if}}
+        </div>
+        <div class="skt-builder-events-wrapper">
+            {{#if blockColumns.length}}
+                {{#each_with_sort blockColumns "order"}}
+                    <div class="skt-builder-events-container" style="background-image: url({{columnImage}}); {{#if columnParallaxEffect}}background-attachment: fixed;{{/if}}">
+                        <div class="skt-builder-columns-row skt-builder-columns-row-2column">
+                        	{{#if blockSwitchPosition}}
+                                <div class="skt-builder-column skt-builder-events-column skt-builder-events-column-{{id}}">
+                                    <style>
+                                        .skt-builder-events-column-{{id}} .skt-builder-block-button{background-color: {{blockButtonBgColor}}; color: {{blockButtonTextColor}};}
+                                        .skt-builder-events-column-{{id}} .skt-builder-block-button:hover{background-color: {{blockButtonHoverBgColor}}; color: {{blockButtonHoverTextColor}};}
+                                    </style>
+                                    <div class="skt-builder-column-inner" style="text-align: {{blockContentAlign}};">
+                                        <h3 class="skt-builder-events-column-title" style="color: {{titleColor}};">{{title}}</h3>
+                                        {{#if columnContent}}<div class="skt-builder-events-column-text">{{{columnContent}}}</div>{{/if}}
+                                        <a class="skt-builder-block-button" href="{{blockButtonLink}}" {{#if blockButtonLinkTarget}}target="_blank"{{/if}}>{{blockButtonText}}</a>
+                                    </div>
+                                    <div class="skt-builder-events-arrow-left"></div>                                    
+                                </div>
+                                <div class="skt-builder-column skt-builder-events-column skt-builder-events-column-{{id}}"></div>
+                            {{else}}
+                                <div class="skt-builder-column skt-builder-events-column skt-builder-events-column-{{id}}"></div>
+                                <div class="skt-builder-column skt-builder-events-column skt-builder-events-column-{{id}}">
+                                    <style>
+                                        .skt-builder-events-column-{{id}} .skt-builder-block-button{background-color: {{blockButtonBgColor}}; color: {{blockButtonTextColor}};}
+                                        .skt-builder-events-column-{{id}} .skt-builder-block-button:hover{background-color: {{blockButtonHoverBgColor}}; color: {{blockButtonHoverTextColor}};}
+                                    </style>
+                                    <div class="skt-builder-column-inner" style="text-align: {{blockContentAlign}};">
+                                        <h3 class="skt-builder-events-column-title" style="color: {{titleColor}};">{{title}}</h3>
+                                        {{#if columnContent}}<div class="skt-builder-events-column-text">{{{columnContent}}}</div>{{/if}}
+                                        <a class="skt-builder-block-button" href="{{blockButtonLink}}" {{#if blockButtonLinkTarget}}target="_blank"{{/if}}>{{blockButtonText}}</a>
+                                    </div>
+                                    <div class="skt-builder-events-arrow-right"></div>
+                                </div>
+                            {{/if}}
+                        </div>
+                    </div>
+                {{/each_with_sort}}
+            {{/if}}
+        </div>
+	</div>
+</div>
+
+<script>
+jQuery(document).ready(function() {
+    jQuery('p').each(function() {
+        var $this = jQuery(this);
+        if($this.html().replace(/\s|&nbsp;/g, '').length == 0) {
+            $this.remove();
+        }
+    });
+});
+
+jQuery(document).ready(function() {
+    jQuery('p').each(function() {
+        var $this = jQuery(this);
+        if($this.html().replace(/\s|<br>/g, '').length == 0) {
+            $this.remove();
+        }
+    });
+});
+</script>
+
+{{#if blockAnimation}}
+<script>
+jQuery.noConflict();
+jQuery(document).ready(function(){
+jQuery(window).scroll(function(){
+    // This is then function used to detect if the element is scrolled into view
+    function elementScrolled(elem)
+    {
+        var docViewTop = jQuery(window).scrollTop();
+        var docViewBottom = docViewTop + jQuery(window).height();
+        var elemTop = jQuery(elem).offset().top;
+        return ((elemTop <= docViewBottom) && (elemTop >= docViewTop));
+    }
+
+	if (jQuery('.skt-builder-block-inner-{{id}}').length > 0) {
+	if(elementScrolled('.skt-builder-block-inner-{{id}}')) {
+        var els = jQuery('.skt-builder-block-inner-{{id}}'),
+            i = 0,
+            f = function () {
+                jQuery(els[i++]).addClass('{{blockAnimationEffect}}');
+                if(i < els.length) setTimeout(f, 400);
+            };
+        f();
+    }}
+
+});
+});
+</script>
+{{/if}}

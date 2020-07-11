@@ -1,0 +1,130 @@
+{
+    "name": "Home Section 7",
+    "groups": "home-sections",
+    "template": "template.hbs",
+    "settings": [{
+        "name": "blockTitle",
+        "label": "Title",
+        "type": "text"
+    }, {
+		"name": "blockTitleColor",
+		"label": "Title Color",
+		"type": "colorpicker",
+		"colors": ["#886af8", "#89c421", "#5cb4f2", "#f58231", "#9A6324", "#800000"]
+	}, {
+        "name": "blockTitleFontSize",
+        "label": "Title Font Size",
+        "type": "slider",
+    	"min": "0",
+    	"max": "150"
+    }, {
+        "name": "blockTitleMarginBottom",
+        "label": "Title Margin Bottom",
+        "type": "slider",
+    	"min": "0",
+    	"max": "200"
+    }, {
+        "name": "blockTitleSeparator",
+        "label": "Title Separator",
+        "type": "checkbox_switch"
+    }, {
+		"name": "blockTitleSeparatorColor",
+		"label": "Title Separator Color",
+		"type": "colorpicker",
+		"colors": ["#886af8", "#89c421", "#5cb4f2", "#f58231", "#9A6324", "#800000"]
+	}, {
+        "name": "blockTitleAlign",
+        "label": "Title Alignment",
+        "type": "select",
+        "default": "left",
+        "options": [{
+            "id": "left",
+            "val": "Left"
+        }, {
+            "id": "center",
+            "val": "Center"
+        }, {
+            "id": "right",
+            "val": "Right"
+        }, {
+            "id": "justify",
+            "val": "Justify"
+        }]
+    }, {
+        "name": "blockDescription",
+        "label": "Text",
+        "type": "textarea"
+    }, {
+        "name": "mapSource",
+        "label": "Map Iframe src",
+        "type": "text"
+    }, {
+        "name": "mapWidth",
+        "label": "Map Width",
+        "type": "slider",
+		"min": "0",
+    	"max": "100"
+    }, {
+        "name": "mapHeight",
+        "label": "Map Height",
+        "type": "slider",
+		"min": "0",
+    	"max": "1000"
+    }, {
+        "name": "blockAnimation",
+        "label": "Enable Animation",
+        "type": "checkbox_switch"
+    }, {
+        "name": "blockAnimationEffect",
+        "label": "Animation Effect",
+        "type": "select",
+        "default": "fadeIn",
+        "options": [{"id": "fadeIn", "val": "fadeIn"}, {"id": "fadeInUp", "val": "fadeInUp"}, {"id": "fadeInDown", "val": "fadeInDown"}, {"id": "fadeInLeft", "val": "fadeInLeft"}, {"id": "fadeInRight", "val": "fadeInRight"}, {"id": "fadeInUpBig", "val": "fadeInUpBig"}, {"id": "fadeInDownBig", "val": "fadeInDownBig"}, {"id": "fadeInLeftBig", "val": "fadeInLeftBig"}, {"id": "fadeInRightBig", "val": "fadeInRightBig"}, {"id": "fadeOut", "val": "fadeOut"}, {"id": "fadeOutUp", "val": "fadeOutUp"}, {"id": "fadeOutDown", "val": "fadeOutDown"}, {"id": "fadeOutLeft", "val": "fadeOutLeft"}, {"id": "fadeOutRight", "val": "fadeOutRight"}, {"id": "fadeOutUpBig", "val": "fadeOutUpBig"}, {"id": "fadeOutDownBig", "val": "fadeOutDownBig"}, {"id": "fadeOutLeftBig", "val": "fadeOutLeftBig"}, {"id": "fadeOutRightBig", "val": "fadeOutRightBig"}, {"id": "zoomIn", "val": "zoomIn"}, {"id": "zoomInUp", "val": "zoomInUp"}, {"id": "zoomInDown", "val": "zoomInDown"}, {"id": "zoomInLeft", "val": "zoomInLeft"}, {"id": "zoomInRight", "val": "zoomInRight"}, {"id": "slideInUp", "val": "slideInUp"}, {"id": "slideInDown", "val": "slideInDown"}, {"id": "slideInLeft", "val": "slideInLeft"}, {"id": "slideInRight", "val": "slideInRight"}, {"id": "slideOutUp", "val": "slideOutUp"}, {"id": "slideOutDown", "val": "slideOutDown"}, {"id": "slideOutLeft", "val": "slideOutLeft"}, {"id": "slideOutRight", "val": "slideOutRight"}, {"id": "flip", "val": "flip"}, {"id": "flipInX", "val": "flipInX"}, {"id": "flipInY", "val": "flipInY"}, {"id": "flipOutX", "val": "flipOutX"}, {"id": "flipOutY", "val": "flipOutY"}, {"id": "rotateIn", "val": "rotateIn"}, {"id": "rotateInUpLeft", "val": "rotateInUpLeft"}, {"id": "rotateInUpRight", "val": "rotateInUpRight"}, {"id": "rotateInDownLeft", "val": "rotateInDownLeft"}, {"id": "rotateInDownRight", "val": "rotateInDownRight"}, {"id": "rotateOut", "val": "rotateOut"}, {"id": "rotateOutUpLeft", "val": "rotateOutUpLeft"}, {"id": "rotateOutUpRight", "val": "rotateOutUpRight"}, {"id": "rotateOutDownLeft","val": "rotateOutDownLeft"}, {"id": "rotateOutDownRight", "val": "rotateOutDownRight"}, {"id": "bounce", "val": "bounce"}, {"id": "bounceIn", "val": "bounceIn"}, {"id": "bounceInUp", "val": "bounceInUp"}, {"id": "bounceInDown", "val": "bounceInDown"}, {"id": "bounceInLeft", "val": "bounceInLeft"}, {"id": "bounceInRight", "val": "bounceInRight"}, {"id": "bounceOut", "val": "bounceOut"}, {"id": "bounceOutUp", "val": "bounceOutUp"}, {"id": "bounceOutDown", "val": "bounceOutDown"}, {"id": "bounceOutLeft", "val": "bounceOutLeft"}, {"id": "bounceOutRight", "val": "bounceOutRight"}, {"id": "rollIn", "val": "rollIn"}, {"id": "rollOut", "val": "rollOut"}, {"id": "lightSpeedIn", "val": "lightSpeedIn"}, {"id": "lightSpeedOut", "val": "lightSpeedOut"}, {"id": "flash", "val": "flash"}, {"id": "pulse", "val": "pulse"}, {"id": "shake", "val": "shake"}, {"id": "swing", "val": "swing"}, {"id": "tada", "val": "tada"}, {"id": "wobble", "val": "wobble"}]
+    }, {
+        "name": "blockPaddingTop",
+        "label": "Padding Top",
+        "type": "slider",
+    	"min": "0",
+    	"max": "300"
+    }, {
+        "name": "blockPaddingBottom",
+        "label": "Padding Bottom",
+        "type": "slider",
+    	"min": "0",
+    	"max": "300"
+    }, {
+    	"name": "blockBackgroundColor",
+    	"label": "Background Color",
+    	"type": "colorpicker",
+    	"colors": ["#886af8", "#89c421", "#5cb4f2", "#f58231", "#9A6324", "#800000"]
+	}, {
+        "name": "blockParallaxEffect",
+        "label": "Parallax Effect",
+        "type": "checkbox_switch"
+    }, {
+        "name": "blockBgImageUrl",
+        "label": "Background Image",
+        "type": "image"
+    }],
+
+    "defaults": {
+		"blockTitle": "",
+		"blockTitleColor": "#ffffff",
+		"blockTitleFontSize": "42",
+		"blockTitleMarginBottom": "50",
+		"blockTitleSeparator": 1,
+		"blockTitleSeparatorColor": "#ffffff",
+		"blockTitleAlign": "center",
+        "blockDescription": "",
+		"mapSource": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317718.69319292053!2d-0.3817765050863085!3d51.528307984912544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C+UK!5e0!3m2!1sen!2sin!4v1542185558056",
+        "mapWidth": "100",
+        "mapHeight": "480",
+		"blockAnimation" : 0,
+		"blockAnimationEffect" : "fadeIn",
+		"blockPaddingTop" : "",
+		"blockPaddingBottom" : "",
+		"blockBackgroundColor": "#f8f8f8",
+		"blockParallaxEffect" : 0,
+		"blockBgImageUrl": ""
+    }
+}

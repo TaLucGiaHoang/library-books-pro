@@ -1,0 +1,83 @@
+{
+    "name": "Home Section 5",
+    "groups": "home-sections",
+    "template": "template.hbs",
+    "settings": [{
+        "name": "header",
+        "label": "Title",
+        "type": "text"
+    }, {
+		"name": "blockTitleColor",
+		"label": "Title Color",
+		"type": "colorpicker",
+		"colors": ["#ffffff", "#89c421", "#5cb4f2", "#f58231", "#9A6324", "#800000"]
+	}, {
+        "name": "blockTitleFontSize",
+        "label": "Title Font Size",
+        "type": "slider",
+    	"min": "0",
+    	"max": "150"
+    }, {
+        "name": "blockTitleMarginBottom",
+        "label": "Title Margin Bottom",
+        "type": "slider",
+    	"min": "0",
+    	"max": "200"
+    }, {
+        "name": "blockTitleSeparator",
+        "label": "Title Separator",
+        "type": "checkbox_switch"
+    }, {
+		"name": "blockTitleSeparatorColor",
+		"label": "Title Separator Color",
+		"type": "colorpicker",
+		"colors": ["#886af8", "#89c421", "#5cb4f2", "#f58231", "#9A6324", "#800000"]
+	}, {
+        "name": "blockTitleAlign",
+        "label": "Title Alignment",
+        "type": "select",
+        "default": "left",
+        "options": [{
+            "id": "left",
+            "val": "Left"
+        }, {
+            "id": "center",
+            "val": "Center"
+        }, {
+            "id": "right",
+            "val": "Right"
+        }, {
+            "id": "justify",
+            "val": "Justify"
+        }]
+    }, {
+        "name": "description",
+        "label": "Description",
+        "type": "textarea"
+    }, {
+        "name": "bgImageUrl",
+        "label": "Background image",
+        "type": "image"
+    }, {
+        "name": "src",
+        "label": "Video",
+        "type": "video",
+        "tags": ["myVid"],
+        "hideDeleteButton": 1
+    }],
+    "defaults": {
+        "header": "Our Library Video",
+		"blockTitleColor": "#ffffff",
+		"blockTitleFontSize": "36",
+		"blockTitleMarginBottom": "30",
+		"blockTitleSeparator": 0,
+		"blockTitleSeparatorColor": "#685031",
+		"blockTitleAlign": "center",		
+        "description": "",
+        "bgImageUrl": "%block_url%/assets/img/main_bg.jpg",
+        "src": {
+            "url": "%block_url%/assets/videos/LoremIpsumVideo.mp4",
+            "preview": "%block_url%/assets/img/poster.jpg"
+        }
+    }
+}

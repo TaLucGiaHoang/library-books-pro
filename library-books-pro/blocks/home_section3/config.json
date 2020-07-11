@@ -1,0 +1,272 @@
+{
+    "name": "Home Section 3",
+    "groups": "home-sections",
+    "template": "template.hbs",
+    "settings": [{
+        "name": "blockTitle",
+        "label": "Title",
+        "type": "text"
+    }, {
+		"name": "blockTitleColor",
+		"label": "Title Color",
+		"type": "colorpicker",
+		"colors": ["#886af8", "#89c421", "#5cb4f2", "#f58231", "#9A6324", "#800000"]
+	}, {
+        "name": "blockTitleFontSize",
+        "label": "Title Font Size",
+        "type": "slider",
+    	"min": "0",
+    	"max": "150"
+    }, {
+        "name": "blockTitleMarginBottom",
+        "label": "Title Margin Bottom",
+        "type": "slider",
+    	"min": "0",
+    	"max": "200"
+    }, {
+        "name": "blockTitleSeparator",
+        "label": "Title Separator",
+        "type": "checkbox_switch"
+    }, {
+		"name": "blockTitleSeparatorColor",
+		"label": "Title Separator Color",
+		"type": "colorpicker",
+		"colors": ["#886af8", "#89c421", "#5cb4f2", "#f58231", "#9A6324", "#800000"]
+	}, {
+        "name": "blockTitleAlign",
+        "label": "Title Alignment",
+        "type": "select",
+        "default": "left",
+        "options": [{
+            "id": "left",
+            "val": "Left"
+        }, {
+            "id": "center",
+            "val": "Center"
+        }, {
+            "id": "right",
+            "val": "Right"
+        }, {
+            "id": "justify",
+            "val": "Justify"
+        }]
+    }, {
+        "name": "blockDescription",
+        "label": "Description",
+        "type": "textarea"
+    }, {
+        "name": "blockColumns",
+        "label": "Columns",
+        "type": "accordion",
+        "settings": [{
+            "name": "title",
+            "label": "Title",
+            "type": "text"
+        }, {
+			"name": "titleColor",
+			"label": "Title Color",
+			"type": "colorpicker",
+			"colors": ["#886af8", "#89c421", "#5cb4f2", "#f58231", "#9A6324", "#800000"]
+		}, {
+            "name": "columnContent",
+            "label": "Content",
+            "type": "textarea"
+        }, {
+        "name": "blockButtonText",
+        "label": "Button Text",
+        "type": "text"
+		}, {
+			"name": "blockButtonLink",
+			"label": "Button Link",
+			"type": "text"
+		}, {
+			"name": "blockButtonLinkTarget",
+			"label": "Open button link in new tab?",
+			"type": "checkbox_switch"
+		}, {
+			"name": "blockButtonTextColor",
+			"label": "Button Text Color",
+			"type": "colorpicker",
+			"colors": ["#886af8", "#89c421", "#5cb4f2", "#f58231", "#9A6324", "#800000"]
+		}, {
+			"name": "blockButtonBgColor",
+			"label": "Button Background Color",
+			"type": "colorpicker",
+			"colors": ["#886af8", "#89c421", "#5cb4f2", "#f58231", "#9A6324", "#800000"]
+		}, {
+			"name": "blockButtonHoverTextColor",
+			"label": "Button Hover Text Color",
+			"type": "colorpicker",
+			"colors": ["#886af8", "#89c421", "#5cb4f2", "#f58231", "#9A6324", "#800000"]
+		}, {
+			"name": "blockButtonHoverBgColor",
+			"label": "Button Hover Background Color",
+			"type": "colorpicker",
+			"colors": ["#886af8", "#89c421", "#5cb4f2", "#f58231", "#9A6324", "#800000"]
+		}, {
+			"name": "blockContentAlign",
+			"label": "Content Alignment",
+			"type": "select",
+			"default": "left",
+			"options": [{
+				"id": "left",
+				"val": "Left"
+			}, {
+				"id": "center",
+				"val": "Center"
+			}, {
+				"id": "right",
+				"val": "Right"
+			}, {
+				"id": "justify",
+				"val": "Justify"
+			}]
+		}, {
+			"name": "blockSwitchPosition",
+			"label": "Switch Content Position",
+			"type": "checkbox_switch"
+		}, {
+			"name": "columnParallaxEffect",
+			"label": "Parallax Effect",
+			"type": "checkbox_switch"
+		}, {
+            "name": "columnImage",
+            "label": "Image",
+            "type": "image"
+        }]
+    }, {
+        "name": "blockAnimation",
+        "label": "Enable Animation",
+        "type": "checkbox_switch"
+    }, {
+        "name": "blockAnimationEffect",
+        "label": "Animation Effect",
+        "type": "select",
+        "default": "fadeIn",
+        "options": [{"id": "fadeIn", "val": "fadeIn"}, {"id": "fadeInUp", "val": "fadeInUp"}, {"id": "fadeInDown", "val": "fadeInDown"}, {"id": "fadeInLeft", "val": "fadeInLeft"}, {"id": "fadeInRight", "val": "fadeInRight"}, {"id": "fadeInUpBig", "val": "fadeInUpBig"}, {"id": "fadeInDownBig", "val": "fadeInDownBig"}, {"id": "fadeInLeftBig", "val": "fadeInLeftBig"}, {"id": "fadeInRightBig", "val": "fadeInRightBig"}, {"id": "fadeOut", "val": "fadeOut"}, {"id": "fadeOutUp", "val": "fadeOutUp"}, {"id": "fadeOutDown", "val": "fadeOutDown"}, {"id": "fadeOutLeft", "val": "fadeOutLeft"}, {"id": "fadeOutRight", "val": "fadeOutRight"}, {"id": "fadeOutUpBig", "val": "fadeOutUpBig"}, {"id": "fadeOutDownBig", "val": "fadeOutDownBig"}, {"id": "fadeOutLeftBig", "val": "fadeOutLeftBig"}, {"id": "fadeOutRightBig", "val": "fadeOutRightBig"}, {"id": "zoomIn", "val": "zoomIn"}, {"id": "zoomInUp", "val": "zoomInUp"}, {"id": "zoomInDown", "val": "zoomInDown"}, {"id": "zoomInLeft", "val": "zoomInLeft"}, {"id": "zoomInRight", "val": "zoomInRight"}, {"id": "slideInUp", "val": "slideInUp"}, {"id": "slideInDown", "val": "slideInDown"}, {"id": "slideInLeft", "val": "slideInLeft"}, {"id": "slideInRight", "val": "slideInRight"}, {"id": "slideOutUp", "val": "slideOutUp"}, {"id": "slideOutDown", "val": "slideOutDown"}, {"id": "slideOutLeft", "val": "slideOutLeft"}, {"id": "slideOutRight", "val": "slideOutRight"}, {"id": "flip", "val": "flip"}, {"id": "flipInX", "val": "flipInX"}, {"id": "flipInY", "val": "flipInY"}, {"id": "flipOutX", "val": "flipOutX"}, {"id": "flipOutY", "val": "flipOutY"}, {"id": "rotateIn", "val": "rotateIn"}, {"id": "rotateInUpLeft", "val": "rotateInUpLeft"}, {"id": "rotateInUpRight", "val": "rotateInUpRight"}, {"id": "rotateInDownLeft", "val": "rotateInDownLeft"}, {"id": "rotateInDownRight", "val": "rotateInDownRight"}, {"id": "rotateOut", "val": "rotateOut"}, {"id": "rotateOutUpLeft", "val": "rotateOutUpLeft"}, {"id": "rotateOutUpRight", "val": "rotateOutUpRight"}, {"id": "rotateOutDownLeft","val": "rotateOutDownLeft"}, {"id": "rotateOutDownRight", "val": "rotateOutDownRight"}, {"id": "bounce", "val": "bounce"}, {"id": "bounceIn", "val": "bounceIn"}, {"id": "bounceInUp", "val": "bounceInUp"}, {"id": "bounceInDown", "val": "bounceInDown"}, {"id": "bounceInLeft", "val": "bounceInLeft"}, {"id": "bounceInRight", "val": "bounceInRight"}, {"id": "bounceOut", "val": "bounceOut"}, {"id": "bounceOutUp", "val": "bounceOutUp"}, {"id": "bounceOutDown", "val": "bounceOutDown"}, {"id": "bounceOutLeft", "val": "bounceOutLeft"}, {"id": "bounceOutRight", "val": "bounceOutRight"}, {"id": "rollIn", "val": "rollIn"}, {"id": "rollOut", "val": "rollOut"}, {"id": "lightSpeedIn", "val": "lightSpeedIn"}, {"id": "lightSpeedOut", "val": "lightSpeedOut"}, {"id": "flash", "val": "flash"}, {"id": "pulse", "val": "pulse"}, {"id": "shake", "val": "shake"}, {"id": "swing", "val": "swing"}, {"id": "tada", "val": "tada"}, {"id": "wobble", "val": "wobble"}]
+    }, {
+        "name": "blockPaddingTop",
+        "label": "Padding Top",
+        "type": "slider",
+    	"min": "0",
+    	"max": "300"
+    }, {
+        "name": "blockPaddingBottom",
+        "label": "Padding Bottom",
+        "type": "slider",
+    	"min": "0",
+    	"max": "300"
+    }, {
+    	"name": "blockBackgroundColor",
+    	"label": "Background Color",
+    	"type": "colorpicker",
+    	"colors": ["#ffffff", "#89c421", "#5cb4f2", "#f58231", "#9A6324", "#800000"]
+	}, {
+        "name": "blockParallaxEffect",
+        "label": "Parallax Effect",
+        "type": "checkbox_switch"
+    }, {
+        "name": "blockBgImageUrl",
+        "label": "Background Image",
+        "type": "image"
+    }],
+	"assets": [{
+        "type": "image",
+        "src": "%block_url%/assets/img/exhibition-img1.jpg",
+        "tags": ["exhibition", "sculpture"]
+    }, {
+        "type": "image",
+        "src": "%block_url%/assets/img/exhibition-img2.jpg",
+        "tags": ["exhibition", "sculpture"]
+    }, {
+        "type": "image",
+        "src": "%block_url%/assets/img/exhibition-img3.jpg",
+        "tags": ["exhibition", "sculpture"]
+    }, {
+        "type": "image",
+        "src": "%block_url%/assets/img/exhibition-img4.jpg",
+        "tags": ["exhibition", "sculpture"]
+    }],
+    "defaults": {
+        "blockTitle": "Upcoming Book Launch",
+		"blockTitleColor": "#282828",
+		"blockTitleFontSize": "36",
+		"blockTitleMarginBottom": "60",
+		"blockTitleSeparator": 0,
+		"blockTitleSeparatorColor": "#f19100",
+		"blockTitleAlign": "center",
+        "blockDescription": "",
+		"blockAnimation" : 0,
+		"blockAnimationEffect" : "fadeIn",
+		"blockPaddingTop" : "10",
+		"blockPaddingBottom" : "0",
+		"blockBackgroundColor": "#ffffff",
+		"blockParallaxEffect" : 0,
+		"blockBgImageUrl": "",
+		"blockColumns": [{
+			"title": "Vestibulum Turpis",
+			"titleColor": "#282828",
+            "columnContent": "<p><span style='color: #f19100'>From 6 Dec 2018 until 7 March 2019</span></p><p>Sed pretium ligula ac enim dignissim, nec rutrum dolor tincidunt. Nulla eget mollis tellus. Proin sollicitudin pharetra porttitor. Class aptent taciti sociosqu ad litora torquent per conubia.</p>",
+			"blockButtonText": "View Details",
+			"blockButtonLink": "#",
+			"blockButtonLinkTarget": 0,
+			"blockButtonTextColor": "#fff",
+			"blockButtonBgColor": "#282828",
+			"blockButtonHoverTextColor": "#fff",
+			"blockButtonHoverBgColor": "#f19100",
+			"columnParallaxEffect": 1,
+			"columnImage": "%block_url%/assets/img/exhibition-img1.jpg",
+			"blockContentAlign": "center",
+			"blockSwitchPosition": 1,
+            "order": 1
+        }, {
+			"title": "Luctus Lectus",
+			"titleColor": "#282828",
+            "columnContent": "<p><span style='color: #f19100'>From 6 Dec 2018 until 7 March 2019</span></p><p>Sed pretium ligula ac enim dignissim, nec rutrum dolor tincidunt. Nulla eget mollis tellus. Proin sollicitudin pharetra porttitor. Class aptent taciti sociosqu ad litora torquent per conubia.</p>",
+			"blockButtonText": "View Details",
+			"blockButtonLink": "#",
+			"blockButtonLinkTarget": 0,
+			"blockButtonTextColor": "#fff",
+			"blockButtonBgColor": "#282828",
+			"blockButtonHoverTextColor": "#fff",
+			"blockButtonHoverBgColor": "#f19100",
+			"columnParallaxEffect": 1,
+			"columnImage": "%block_url%/assets/img/exhibition-img2.jpg",
+			"blockContentAlign": "center",
+			"blockSwitchPosition": 0,
+            "order": 2
+        }, {
+			"title": "Tellus Sodales",
+			"titleColor": "#282828",
+            "columnContent": "<p><span style='color: #f19100'>From 6 Dec 2018 until 7 March 2019</span></p><p>Sed pretium ligula ac enim dignissim, nec rutrum dolor tincidunt. Nulla eget mollis tellus. Proin sollicitudin pharetra porttitor. Class aptent taciti sociosqu ad litora torquent per conubia.</p>",
+			"blockButtonText": "View Details",
+			"blockButtonLink": "#",
+			"blockButtonLinkTarget": 0,
+			"blockButtonTextColor": "#fff",
+			"blockButtonBgColor": "#282828",
+			"blockButtonHoverTextColor": "#fff",
+			"blockButtonHoverBgColor": "#f19100",
+			"columnParallaxEffect": 1,
+			"columnImage": "%block_url%/assets/img/exhibition-img3.jpg",
+			"blockContentAlign": "center",
+			"blockSwitchPosition": 1,
+            "order": 3
+        }, {
+			"title": "Magna Dapibus",
+			"titleColor": "#282828",
+            "columnContent": "<p><span style='color: #f19100'>From 6 Dec 2018 until 7 March 2019</span></p><p>Sed pretium ligula ac enim dignissim, nec rutrum dolor tincidunt. Nulla eget mollis tellus. Proin sollicitudin pharetra porttitor. Class aptent taciti sociosqu ad litora torquent per conubia.</p>",
+			"blockButtonText": "View Details",
+			"blockButtonLink": "#",
+			"blockButtonLinkTarget": 0,
+			"blockButtonTextColor": "#fff",
+			"blockButtonBgColor": "#282828",
+			"blockButtonHoverTextColor": "#fff",
+			"blockButtonHoverBgColor": "#f19100",
+			"columnParallaxEffect": 1,
+			"columnImage": "%block_url%/assets/img/exhibition-img4.jpg",
+			"blockContentAlign": "center",
+			"blockSwitchPosition": 0,
+            "order": 4
+        }]
+    }
+}

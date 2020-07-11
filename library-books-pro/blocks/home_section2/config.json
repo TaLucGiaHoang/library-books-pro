@@ -1,0 +1,259 @@
+{
+    "name": "Home Section 2",
+    "groups": "home-sections",
+    "template": "template.hbs",
+    "settings": [{
+        "name": "blockTitle",
+        "label": "Title",
+        "type": "text"
+    }, {
+		"name": "blockTitleColor",
+		"label": "Title Color",
+		"type": "colorpicker",
+		"colors": ["#886af8", "#89c421", "#5cb4f2", "#f58231", "#9A6324", "#800000"]
+	}, {
+        "name": "blockTitleFontSize",
+        "label": "Title Font Size",
+        "type": "slider",
+    	"min": "0",
+    	"max": "150"
+    }, {
+        "name": "blockTitleMarginBottom",
+        "label": "Title Margin Bottom",
+        "type": "slider",
+    	"min": "0",
+    	"max": "200"
+    }, {
+        "name": "blockTitleSeparator",
+        "label": "Title Separator",
+        "type": "checkbox_switch"
+    }, {
+		"name": "blockTitleSeparatorColor",
+		"label": "Title Separator Color",
+		"type": "colorpicker",
+		"colors": ["#886af8", "#89c421", "#5cb4f2", "#f58231", "#9A6324", "#800000"]
+	}, {
+        "name": "blockTitleAlign",
+        "label": "Title Alignment",
+        "type": "select",
+        "default": "left",
+        "options": [{
+            "id": "left",
+            "val": "Left"
+        }, {
+            "id": "center",
+            "val": "Center"
+        }, {
+            "id": "right",
+            "val": "Right"
+        }, {
+            "id": "justify",
+            "val": "Justify"
+        }]
+    }, {
+        "name": "blockDescription",
+        "label": "Description",
+        "type": "textarea"
+    }, {
+        "name": "blockColumnsCount",
+        "label": "Number of columns in a row?",
+        "type": "slider",
+    	"min": "1",
+    	"max": "6"
+    }, {
+        "name": "blockColumns",
+        "label": "Columns",
+        "type": "accordion",
+        "settings": [{
+            "name": "title",
+            "label": "Title",
+            "type": "text"
+        }, {
+			"name": "titleColor",
+			"label": "Title Color",
+			"type": "colorpicker",
+			"colors": ["#886af8", "#89c421", "#5cb4f2", "#f58231", "#9A6324", "#800000"]
+		}, {
+			"name": "titleBgColor",
+			"label": "Title Background Color",
+			"type": "colorpicker",
+			"colors": ["rgba(136, 106, 248, 0.8)", "rgba(137, 196, 33, 0.8)", "rgba(92, 180, 242, 0.8)", "rgba(245, 130, 49, 0.8)", "rgba(154, 99, 36, 0.8)", "rgba(128, 0, 0, 0.8)"]
+		}, {
+			"name": "columnBgColor",
+			"label": "Hover Background Color",
+			"type": "colorpicker",
+			"colors": ["rgba(136, 106, 248, 0.8)", "rgba(137, 196, 33, 0.8)", "rgba(92, 180, 242, 0.8)", "rgba(245, 130, 49, 0.8)", "rgba(154, 99, 36, 0.8)", "rgba(128, 0, 0, 0.8)"]
+		}, {
+			"name": "columnLink",
+			"label": "Link",
+			"type": "text"
+		}, {
+			"name": "columnLinkTarget",
+			"label": "Open link in new tab?",
+			"type": "checkbox_switch"
+		}, {
+            "name": "columnIcon",
+            "label": "Image",
+            "type": "image"
+        }]
+    }, {
+        "name": "blockAnimation",
+        "label": "Enable Animation",
+        "type": "checkbox_switch"
+    }, {
+        "name": "blockAnimationEffect",
+        "label": "Animation Effect",
+        "type": "select",
+        "default": "fadeIn",
+        "options": [{"id": "fadeIn", "val": "fadeIn"}, {"id": "fadeInUp", "val": "fadeInUp"}, {"id": "fadeInDown", "val": "fadeInDown"}, {"id": "fadeInLeft", "val": "fadeInLeft"}, {"id": "fadeInRight", "val": "fadeInRight"}, {"id": "fadeInUpBig", "val": "fadeInUpBig"}, {"id": "fadeInDownBig", "val": "fadeInDownBig"}, {"id": "fadeInLeftBig", "val": "fadeInLeftBig"}, {"id": "fadeInRightBig", "val": "fadeInRightBig"}, {"id": "fadeOut", "val": "fadeOut"}, {"id": "fadeOutUp", "val": "fadeOutUp"}, {"id": "fadeOutDown", "val": "fadeOutDown"}, {"id": "fadeOutLeft", "val": "fadeOutLeft"}, {"id": "fadeOutRight", "val": "fadeOutRight"}, {"id": "fadeOutUpBig", "val": "fadeOutUpBig"}, {"id": "fadeOutDownBig", "val": "fadeOutDownBig"}, {"id": "fadeOutLeftBig", "val": "fadeOutLeftBig"}, {"id": "fadeOutRightBig", "val": "fadeOutRightBig"}, {"id": "zoomIn", "val": "zoomIn"}, {"id": "zoomInUp", "val": "zoomInUp"}, {"id": "zoomInDown", "val": "zoomInDown"}, {"id": "zoomInLeft", "val": "zoomInLeft"}, {"id": "zoomInRight", "val": "zoomInRight"}, {"id": "slideInUp", "val": "slideInUp"}, {"id": "slideInDown", "val": "slideInDown"}, {"id": "slideInLeft", "val": "slideInLeft"}, {"id": "slideInRight", "val": "slideInRight"}, {"id": "slideOutUp", "val": "slideOutUp"}, {"id": "slideOutDown", "val": "slideOutDown"}, {"id": "slideOutLeft", "val": "slideOutLeft"}, {"id": "slideOutRight", "val": "slideOutRight"}, {"id": "flip", "val": "flip"}, {"id": "flipInX", "val": "flipInX"}, {"id": "flipInY", "val": "flipInY"}, {"id": "flipOutX", "val": "flipOutX"}, {"id": "flipOutY", "val": "flipOutY"}, {"id": "rotateIn", "val": "rotateIn"}, {"id": "rotateInUpLeft", "val": "rotateInUpLeft"}, {"id": "rotateInUpRight", "val": "rotateInUpRight"}, {"id": "rotateInDownLeft", "val": "rotateInDownLeft"}, {"id": "rotateInDownRight", "val": "rotateInDownRight"}, {"id": "rotateOut", "val": "rotateOut"}, {"id": "rotateOutUpLeft", "val": "rotateOutUpLeft"}, {"id": "rotateOutUpRight", "val": "rotateOutUpRight"}, {"id": "rotateOutDownLeft","val": "rotateOutDownLeft"}, {"id": "rotateOutDownRight", "val": "rotateOutDownRight"}, {"id": "bounce", "val": "bounce"}, {"id": "bounceIn", "val": "bounceIn"}, {"id": "bounceInUp", "val": "bounceInUp"}, {"id": "bounceInDown", "val": "bounceInDown"}, {"id": "bounceInLeft", "val": "bounceInLeft"}, {"id": "bounceInRight", "val": "bounceInRight"}, {"id": "bounceOut", "val": "bounceOut"}, {"id": "bounceOutUp", "val": "bounceOutUp"}, {"id": "bounceOutDown", "val": "bounceOutDown"}, {"id": "bounceOutLeft", "val": "bounceOutLeft"}, {"id": "bounceOutRight", "val": "bounceOutRight"}, {"id": "rollIn", "val": "rollIn"}, {"id": "rollOut", "val": "rollOut"}, {"id": "lightSpeedIn", "val": "lightSpeedIn"}, {"id": "lightSpeedOut", "val": "lightSpeedOut"}, {"id": "flash", "val": "flash"}, {"id": "pulse", "val": "pulse"}, {"id": "shake", "val": "shake"}, {"id": "swing", "val": "swing"}, {"id": "tada", "val": "tada"}, {"id": "wobble", "val": "wobble"}]
+    }, {
+        "name": "blockPaddingTop",
+        "label": "Padding Top",
+        "type": "slider",
+    	"min": "0",
+    	"max": "300"
+    }, {
+        "name": "blockPaddingBottom",
+        "label": "Padding Bottom",
+        "type": "slider",
+    	"min": "0",
+    	"max": "300"
+    }, {
+    	"name": "blockBackgroundColor",
+    	"label": "Background Color",
+    	"type": "colorpicker",
+    	"colors": ["#ffffff", "#89c421", "#5cb4f2", "#f58231", "#9A6324", "#800000"]
+	}, {
+        "name": "blockParallaxEffect",
+        "label": "Parallax Effect",
+        "type": "checkbox_switch"
+    }, {
+        "name": "blockBgImageUrl",
+        "label": "Background Image",
+        "type": "image"
+    }],
+	"assets": [{
+        "type": "image",
+        "src": "%block_url%/assets/img/service-img1.jpg",
+        "tags": ["service", "sculpture"]
+    }, {
+        "type": "image",
+        "src": "%block_url%/assets/img/service-img2.jpg",
+        "tags": ["service", "sculpture"]
+    }, {
+        "type": "image",
+        "src": "%block_url%/assets/img/service-img3.jpg",
+        "tags": ["service", "sculpture"]
+    }, {
+        "type": "image",
+        "src": "%block_url%/assets/img/service-img4.jpg",
+        "tags": ["service", "sculpture"]
+    }, {
+        "type": "image",
+        "src": "%block_url%/assets/img/service-img5.jpg",
+        "tags": ["service", "sculpture"]
+    }, {
+        "type": "image",
+        "src": "%block_url%/assets/img/service-img6.jpg",
+        "tags": ["service", "sculpture"]
+    }, {
+        "type": "image",
+        "src": "%block_url%/assets/img/service-img7.jpg",
+        "tags": ["service", "sculpture"]
+    }, {
+        "type": "image",
+        "src": "%block_url%/assets/img/service-img8.jpg",
+        "tags": ["service", "sculpture"]
+    }],
+    "defaults": {
+        "blockTitle": "Our Categories",
+		"blockTitleColor": "#282828",
+		"blockTitleFontSize": "36",
+		"blockTitleMarginBottom": "60",
+		"blockTitleSeparator": 0,
+		"blockTitleSeparatorColor": "#685031",
+		"blockTitleAlign": "center",
+        "blockDescription": "",
+		"blockAnimation" : 0,
+		"blockAnimationEffect" : "fadeIn",
+		"blockPaddingTop" : "80",
+		"blockPaddingBottom" : "80",
+		"blockBackgroundColor": "#ffffff",
+		"blockParallaxEffect" : 0,
+		"blockBgImageUrl": "",
+		"blockColumnsCount" : "4",
+		"blockColumns": [{
+			"title": "Biography",
+			"titleColor": "#fff",
+			"titleBgColor": "rgba(0, 0, 0, 0.7)",
+			"columnBgColor": "rgba(241, 145, 0, 0.8)",
+			"columnLink": "#",
+			"columnLinkTarget": 0,
+			"columnIcon": "%block_url%/assets/img/service-img1.jpg",
+            "order": 1
+        }, {
+			"title": "Children's Book",
+			"titleColor": "#fff",
+			"titleBgColor": "rgba(0, 0, 0, 0.7)",
+			"columnBgColor": "rgba(241, 145, 0, 0.8)",
+			"columnLink": "#",
+			"columnLinkTarget": 0,
+			"columnIcon": "%block_url%/assets/img/service-img2.jpg",
+            "order": 2
+        }, {
+			"title": "Craft and Hobbies",
+			"titleColor": "#fff",
+			"titleBgColor": "rgba(0, 0, 0, 0.7)",
+			"columnBgColor": "rgba(241, 145, 0, 0.8)",
+			"columnLink": "#",
+			"columnLinkTarget": 0,
+			"columnIcon": "%block_url%/assets/img/service-img3.jpg",
+            "order": 3
+        }, {
+			"title": "Crime and Thriller",
+			"titleColor": "#fff",
+			"titleBgColor": "rgba(0, 0, 0, 0.7)",
+			"columnBgColor": "rgba(241, 145, 0, 0.8)",
+			"columnLink": "#",
+			"columnLinkTarget": 0,
+			"columnIcon": "%block_url%/assets/img/service-img4.jpg",
+            "order": 4
+        }, {
+			"title": "Fiction",
+			"titleColor": "#fff",
+			"titleBgColor": "rgba(0, 0, 0, 0.7)",
+			"columnBgColor": "rgba(241, 145, 0, 0.8)",
+			"columnLink": "#",
+			"columnLinkTarget": 0,
+			"columnIcon": "%block_url%/assets/img/service-img5.jpg",
+            "order": 5
+        }, {
+			"title": "Art and Photography",
+			"titleColor": "#fff",
+			"titleBgColor": "rgba(0, 0, 0, 0.7)",
+			"columnBgColor": "rgba(241, 145, 0, 0.8)",
+			"columnLink": "#",
+			"columnLinkTarget": 0,
+			"columnIcon": "%block_url%/assets/img/service-img6.jpg",
+            "order": 6
+        }, {
+			"title": "Science",
+			"titleColor": "#fff",
+			"titleBgColor": "rgba(0, 0, 0, 0.7)",
+			"columnBgColor": "rgba(241, 145, 0, 0.8)",
+			"columnLink": "#",
+			"columnLinkTarget": 0,
+			"columnIcon": "%block_url%/assets/img/service-img7.jpg",
+            "order": 7
+        }, {
+			"title": "Fantasy and Horror",
+			"titleColor": "#fff",
+			"titleBgColor": "rgba(0, 0, 0, 0.7)",
+			"columnBgColor": "rgba(241, 145, 0, 0.8)",
+			"columnLink": "#",
+			"columnLinkTarget": 0,
+			"columnIcon": "%block_url%/assets/img/service-img8.jpg",
+            "order": 8
+        }]
+    }
+}

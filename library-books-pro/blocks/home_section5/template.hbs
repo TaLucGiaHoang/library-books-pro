@@ -1,0 +1,32 @@
+<div id="skt-builder-home-section5-block-{{id}}" class="sktbuilder-block skt-builder-home-section5-block-video sktbuilder-block_simple-bg" style="background-image: url({{bgImageUrl}});">
+        <div class="qb-container">
+             <div class="sktbuilder-header">
+                {{#if header}}
+            <div class="skt-builder-block-title" style="text-align: {{blockTitleAlign}};">
+                                <h2 style="color: {{blockTitleColor}}; font-size: {{blockTitleFontSize}}px; {{#if blockTitleSeparator}}margin-bottom: 0;{{else}}margin-bottom: {{blockTitleMarginBottom}}px;{{/if}} text-align: {{blockTitleAlign}};">{{header}}</h2>
+                                {{#if blockTitleSeparator}}<div class="skt-builder-block-title-separator" style="background-color: {{blockTitleSeparatorColor}}; margin-bottom: {{blockTitleMarginBottom}}px;"></div>{{/if}}
+                            </div>
+                {{/if}}
+                {{#if description}}
+                    <div class="sktbuilder-header__description sktbuilder-header__description_color_black">
+                       {{{description}}}
+                    </div>
+                {{/if}}
+            </div>
+            <div class="video-container-{{id}}"></div>
+        </div>
+        
+</div>
+<script type="text/javascript">
+    jQuery(document).ready(function(){
+        var url = "{{src.url}}",
+            video = '',
+            format = url.substring(url.lastIndexOf('.') + 1, url.length);
+        
+        if (format === 'mp4' || format === 'ogv'|| format === 'webm') {
+            video = "<video  poster='{{src.preview}}' width=' 100%' height='100%' controls><source src='" + url + "' type='video/" + (format === 'ogv' ? 'ogg' : format) + "'></source></video>";
+        }
+		
+        jQuery(".video-container-{{id}}").append(video);
+    });
+</script>

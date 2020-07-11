@@ -1,0 +1,255 @@
+{
+    "name": "Home Section 4",
+    "groups": "home-sections",
+    "template": "template.hbs",
+    "settings": [{
+        "name": "blockTitle",
+        "label": "Title",
+        "type": "text"
+    }, {
+		"name": "blockTitleColor",
+		"label": "Title Color",
+		"type": "colorpicker",
+		"colors": ["#886af8", "#89c421", "#5cb4f2", "#f58231", "#9A6324", "#800000"]
+	}, {
+        "name": "blockTitleFontSize",
+        "label": "Title Font Size",
+        "type": "slider",
+    	"min": "0",
+    	"max": "150"
+    }, {
+        "name": "blockTitleMarginBottom",
+        "label": "Title Margin Bottom",
+        "type": "slider",
+    	"min": "0",
+    	"max": "200"
+    }, {
+        "name": "blockTitleSeparator",
+        "label": "Title Separator",
+        "type": "checkbox_switch"
+    }, {
+		"name": "blockTitleSeparatorColor",
+		"label": "Title Separator Color",
+		"type": "colorpicker",
+		"colors": ["#886af8", "#89c421", "#5cb4f2", "#f58231", "#9A6324", "#800000"]
+	}, {
+        "name": "blockTitleAlign",
+        "label": "Title Alignment",
+        "type": "select",
+        "default": "left",
+        "options": [{
+            "id": "left",
+            "val": "Left"
+        }, {
+            "id": "center",
+            "val": "Center"
+        }, {
+            "id": "right",
+            "val": "Right"
+        }, {
+            "id": "justify",
+            "val": "Justify"
+        }]
+    }, {
+        "name": "blockDescription",
+        "label": "Description",
+        "type": "textarea"
+    }, {
+        "name": "blockColumnsCount",
+        "label": "Number of columns in a row?",
+        "type": "slider",
+    	"min": "1",
+    	"max": "6"
+    }, {
+        "name": "blockColumns",
+        "label": "Columns",
+        "type": "accordion",
+        "settings": [{
+            "name": "title",
+            "label": "Title",
+            "type": "text"
+        }, {
+			"name": "titleColor",
+			"label": "Title Color",
+			"type": "colorpicker",
+			"colors": ["#886af8", "#89c421", "#5cb4f2", "#f58231", "#9A6324", "#800000"]
+		}, {
+            "name": "columnContent",
+            "label": "Content",
+            "type": "textarea"
+        }, {
+        "name": "blockNumber",
+        "label": "Number",
+        "type": "text"
+    	}, {
+		"name": "blockNumberColor",
+		"label": "Number Color",
+		"type": "colorpicker",
+		"colors": ["#ffffff", "#89c421", "#5cb4f2", "#f58231", "#9A6324", "#800000"]
+		}, {
+		"name": "blockNumberBgColor",
+		"label": "Number Background Color",
+		"type": "colorpicker",
+		"colors": ["#f19100", "#89c421", "#5cb4f2", "#f58231", "#9A6324", "#800000"]
+		},{
+        "name": "blockButtonText",
+        "label": "Button Text",
+        "type": "text"
+		}, {
+			"name": "blockButtonLink",
+			"label": "Block And Button Link",
+			"type": "text"
+		}, {
+			"name": "blockButtonLinkTarget",
+			"label": "Open button link in new tab?",
+			"type": "checkbox_switch"
+		}, {
+			"name": "blockButtonTextColor",
+			"label": "Button Text Color",
+			"type": "colorpicker",
+			"colors": ["#886af8", "#89c421", "#5cb4f2", "#f58231", "#9A6324", "#800000"]
+		}, {
+			"name": "blockButtonBgColor",
+			"label": "Button Background Color",
+			"type": "colorpicker",
+			"colors": ["#886af8", "#89c421", "#5cb4f2", "#f58231", "#9A6324", "#800000"]
+		}, {
+			"name": "blockButtonHoverTextColor",
+			"label": "Button Hover Text Color",
+			"type": "colorpicker",
+			"colors": ["#886af8", "#89c421", "#5cb4f2", "#f58231", "#9A6324", "#800000"]
+		}, {
+			"name": "blockButtonHoverBgColor",
+			"label": "Button Hover Background Color",
+			"type": "colorpicker",
+			"colors": ["#886af8", "#89c421", "#5cb4f2", "#f58231", "#9A6324", "#800000"]
+		}, {
+			"name": "blockBgColor",
+			"label": "Box Background Color",
+			"type": "colorpicker",
+			"colors": ["#f8f8f8", "#89c421", "#5cb4f2", "#f58231", "#9A6324", "#800000"]
+		}, {
+            "name": "columnImage",
+            "label": "Image",
+            "type": "image"
+        }]
+    }, {
+        "name": "blockAnimation",
+        "label": "Enable Animation",
+        "type": "checkbox_switch"
+    }, {
+        "name": "blockAnimationEffect",
+        "label": "Animation Effect",
+        "type": "select",
+        "default": "fadeIn",
+        "options": [{"id": "fadeIn", "val": "fadeIn"}, {"id": "fadeInUp", "val": "fadeInUp"}, {"id": "fadeInDown", "val": "fadeInDown"}, {"id": "fadeInLeft", "val": "fadeInLeft"}, {"id": "fadeInRight", "val": "fadeInRight"}, {"id": "fadeInUpBig", "val": "fadeInUpBig"}, {"id": "fadeInDownBig", "val": "fadeInDownBig"}, {"id": "fadeInLeftBig", "val": "fadeInLeftBig"}, {"id": "fadeInRightBig", "val": "fadeInRightBig"}, {"id": "fadeOut", "val": "fadeOut"}, {"id": "fadeOutUp", "val": "fadeOutUp"}, {"id": "fadeOutDown", "val": "fadeOutDown"}, {"id": "fadeOutLeft", "val": "fadeOutLeft"}, {"id": "fadeOutRight", "val": "fadeOutRight"}, {"id": "fadeOutUpBig", "val": "fadeOutUpBig"}, {"id": "fadeOutDownBig", "val": "fadeOutDownBig"}, {"id": "fadeOutLeftBig", "val": "fadeOutLeftBig"}, {"id": "fadeOutRightBig", "val": "fadeOutRightBig"}, {"id": "zoomIn", "val": "zoomIn"}, {"id": "zoomInUp", "val": "zoomInUp"}, {"id": "zoomInDown", "val": "zoomInDown"}, {"id": "zoomInLeft", "val": "zoomInLeft"}, {"id": "zoomInRight", "val": "zoomInRight"}, {"id": "slideInUp", "val": "slideInUp"}, {"id": "slideInDown", "val": "slideInDown"}, {"id": "slideInLeft", "val": "slideInLeft"}, {"id": "slideInRight", "val": "slideInRight"}, {"id": "slideOutUp", "val": "slideOutUp"}, {"id": "slideOutDown", "val": "slideOutDown"}, {"id": "slideOutLeft", "val": "slideOutLeft"}, {"id": "slideOutRight", "val": "slideOutRight"}, {"id": "flip", "val": "flip"}, {"id": "flipInX", "val": "flipInX"}, {"id": "flipInY", "val": "flipInY"}, {"id": "flipOutX", "val": "flipOutX"}, {"id": "flipOutY", "val": "flipOutY"}, {"id": "rotateIn", "val": "rotateIn"}, {"id": "rotateInUpLeft", "val": "rotateInUpLeft"}, {"id": "rotateInUpRight", "val": "rotateInUpRight"}, {"id": "rotateInDownLeft", "val": "rotateInDownLeft"}, {"id": "rotateInDownRight", "val": "rotateInDownRight"}, {"id": "rotateOut", "val": "rotateOut"}, {"id": "rotateOutUpLeft", "val": "rotateOutUpLeft"}, {"id": "rotateOutUpRight", "val": "rotateOutUpRight"}, {"id": "rotateOutDownLeft","val": "rotateOutDownLeft"}, {"id": "rotateOutDownRight", "val": "rotateOutDownRight"}, {"id": "bounce", "val": "bounce"}, {"id": "bounceIn", "val": "bounceIn"}, {"id": "bounceInUp", "val": "bounceInUp"}, {"id": "bounceInDown", "val": "bounceInDown"}, {"id": "bounceInLeft", "val": "bounceInLeft"}, {"id": "bounceInRight", "val": "bounceInRight"}, {"id": "bounceOut", "val": "bounceOut"}, {"id": "bounceOutUp", "val": "bounceOutUp"}, {"id": "bounceOutDown", "val": "bounceOutDown"}, {"id": "bounceOutLeft", "val": "bounceOutLeft"}, {"id": "bounceOutRight", "val": "bounceOutRight"}, {"id": "rollIn", "val": "rollIn"}, {"id": "rollOut", "val": "rollOut"}, {"id": "lightSpeedIn", "val": "lightSpeedIn"}, {"id": "lightSpeedOut", "val": "lightSpeedOut"}, {"id": "flash", "val": "flash"}, {"id": "pulse", "val": "pulse"}, {"id": "shake", "val": "shake"}, {"id": "swing", "val": "swing"}, {"id": "tada", "val": "tada"}, {"id": "wobble", "val": "wobble"}]
+    }, {
+        "name": "blockPaddingTop",
+        "label": "Padding Top",
+        "type": "slider",
+    	"min": "0",
+    	"max": "300"
+    }, {
+        "name": "blockPaddingBottom",
+        "label": "Padding Bottom",
+        "type": "slider",
+    	"min": "0",
+    	"max": "300"
+    }, {
+    	"name": "blockBackgroundColor",
+    	"label": "Background Color",
+    	"type": "colorpicker",
+    	"colors": ["#ffffff", "#89c421", "#5cb4f2", "#f58231", "#9A6324", "#800000"]
+	}, {
+        "name": "blockParallaxEffect",
+        "label": "Parallax Effect",
+        "type": "checkbox_switch"
+    }, {
+        "name": "blockBgImageUrl",
+        "label": "Background Image",
+        "type": "image"
+    }],
+	"assets": [{
+        "type": "image",
+        "src": "%block_url%/assets/img/venue-img1.jpg",
+        "tags": ["venue", "place"]
+    },{
+        "type": "image",
+        "src": "%block_url%/assets/img/venue-img2.jpg",
+        "tags": ["venue", "place"]
+    },{
+        "type": "image",
+        "src": "%block_url%/assets/img/venue-img3.jpg",
+        "tags": ["venue", "place"]
+    }],
+    "defaults": {
+        "blockTitle": "Why choose us",
+		"blockTitleColor": "#282828",
+		"blockTitleFontSize": "36",
+		"blockTitleMarginBottom": "50",
+		"blockTitleSeparator": 0,
+		"blockTitleSeparatorColor": "#f19100",
+		"blockTitleAlign": "center",
+        "blockDescription": "",
+		"blockAnimation" : 0,
+		"blockAnimationEffect" : "fadeIn",
+		"blockPaddingTop" : "80",
+		"blockPaddingBottom" : "70",
+		"blockBackgroundColor": "#ffffff",
+		"blockParallaxEffect" : 0,
+		"blockBgImageUrl": "",
+		"blockColumnsCount" : "3",
+		"blockColumns": [{
+			"title": "New Books",
+			"titleColor": "#282828",
+			"blockNumber": "1",
+			"blockNumberColor": "#ffffff",
+			"blockNumberBgColor": "#f19100",
+            "columnContent": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis volutpadu aliquet velit hendrerit sed.</p>",
+			"blockButtonText": "",
+			"blockButtonLink": "#",
+			"blockButtonLinkTarget": 0,
+			"blockButtonTextColor": "#fff",
+			"blockButtonBgColor": "#282828",
+			"blockButtonHoverTextColor": "#fff",
+			"blockButtonHoverBgColor": "#f19100",
+			"blockBgColor": "#f8f8f8",
+			"columnImage": "%block_url%/assets/img/venue-img1.jpg",
+            "order": 1
+        }, {
+			"title": "Large Bookbase",
+			"titleColor": "#282828",
+			"blockNumber": "2",
+			"blockNumberColor": "#ffffff",
+			"blockNumberBgColor": "#f19100",			
+            "columnContent": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis volutpadu aliquet velit hendrerit sed.</p>",
+			"blockButtonText": "",
+			"blockButtonLink": "#",
+			"blockButtonLinkTarget": 0,
+			"blockButtonTextColor": "#fff",
+			"blockButtonBgColor": "#282828",
+			"blockButtonHoverTextColor": "#fff",
+			"blockButtonHoverBgColor": "#f19100",
+			"blockBgColor": "#f8f8f8",
+			"columnImage": "%block_url%/assets/img/venue-img2.jpg",
+            "order": 2
+        }, {
+			"title": "Accessbility",
+			"titleColor": "#282828",
+			"blockNumber": "3",
+			"blockNumberColor": "#ffffff",
+			"blockNumberBgColor": "#f19100",			
+            "columnContent": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis volutpadu aliquet velit hendrerit sed.</p>",
+			"blockButtonText": "",
+			"blockButtonLink": "#",
+			"blockButtonLinkTarget": 0,
+			"blockButtonTextColor": "#fff",
+			"blockButtonBgColor": "#282828",
+			"blockButtonHoverTextColor": "#fff",
+			"blockButtonHoverBgColor": "#f19100",
+			"blockBgColor": "#f8f8f8",
+			"columnImage": "%block_url%/assets/img/venue-img3.jpg",
+            "order": 3
+        }]
+    }
+}
